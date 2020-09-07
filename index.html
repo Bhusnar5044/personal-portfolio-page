@@ -4,15 +4,15 @@
   <title>My Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap-4.5.2/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" >
 
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="bootstrap-4.5.2/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 		<div class="nav">
@@ -28,41 +28,43 @@
 		</div>
 
 		<div class="section1">
-			<div class="card">
-				<img src="./images/download.png" alt="Profile Pic"/>
-				<div class="container">
-					<h3>Hello Everyone,  I'm</h3>
-					<h1>Pradip Sadashiv Bhusanar</h1>
-					<h3>Full Stack Developer</h3>
-					<p>I have been training myself as a FULL STACK Developer, I have done the internship in Frontend Web Development at GreyAtom. 
-						Also done the Full Stack based Projects, those are listed in my portfolio also. I have done the web development in Django, ReactJs, Angular, Laravel.
-						Being an IT professional, I enjoy learning about the breakthrough in technology. 
-						<!-- I have build projects in different web Development technologies like Django, ReactJs, Anguler. -->
-						<!-- For now, I'm looking for an opportunity to face new challenges and Technologies with you. -->
-					</p>
-					<div class="personal">
-						<span><i class="fas fa-birthday-cake"></i>  1st January, 1996</span>
-						<span><i class="fas fa-phone-alt"></i>  +919767027823</span>
-						<span><i class="fas fa-envelope"></i>  bhusnarpradip@gmail.com</span>
-						<span><i class="fas fa-home"></i>  Padolakarwadi, Mangalweda, Solapur</span>
-					</div>
-					<div class="social">
-						<span><a href=""><i class="fab fa-facebook"></i></a></span>
-						<span><a href=""><i class="fab fa-instagram"></i></a></span>
-						<span><a href=""><i class="fab fa-twitter"></i></a></span>
-						<span><a href=""><i class="fab fa-github"></i></a></span>
-						<span><a href=""><i class="fab fa-linkedin"></i></a></span>
+			<div class="container box">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">
+							<div class="d-flex">
+								<img src="./images/download.png" alt="Profile Pic"/>
+							</div>
+							<div class="media-body">
+								<div class="personal_text">
+									<h6>Hello Everybody, i am</h6>
+									<h3>Pradip Bhusanar</h3>
+									<h4>Full Stack Developer</h4>
+									<p>I have been training myself as a FULL STACK Developer, I have done the internship in Frontend Web Development at GreyAtom. 
+										Also done the Full Stack based Projects, those are listed in my portfolio also. I have done the web development in Django, ReactJs, Angular, Laravel.
+										Being an IT professional, I enjoy learning about the breakthrough in technology. 
+									</p>
+									<ul class="list basic_info">
+										<li><i class="fas fa-birthday-cake"></i>  1st January, 1996</li>
+										<li><i class="fas fa-phone-alt"></i>  +919767027823</li>
+										<li><i class="fas fa-envelope"></i>  bhusnarpradip@gmail.com</li>
+										<li><i class="fas fa-home"></i>  Padolakarwadi, Mangalweda, Solapur</li>
+									</ul>
+									<ul class="list personal_social">
+										<li><a href="https://www.instagram.com/pradip.bhusnar/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://twitter.com/Pradip5044"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://github.com/Bhusnar5044"><i class="fab fa-github"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/pradip-bhusnar-6616b915b/"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="section2">
-			<!-- <div class="top_head">
-				<a class="nav-link active show" id="profile-tab" data-toggle="tab" 
-				href="#profile" role="tab" aria-controls="profile" aria-selected="true">My Education</a>
-				<button>Experience</button>
-			</div> -->
 			<ul id="myTab">
 				<li class="tab-item active">
 					<a data-toggle="tab" href="#education">My Education</a>
@@ -74,24 +76,24 @@
 			<div class="tab-content content" >
 				<div class="tab-pane fade active show" id="education" >
 					<h2>Education</h2>
-					<div class="card">
-						<div class="container">
+					<div class="card1">
+						<div class="container1">
 						<h5><i class="far fa-calendar-alt"></i>  2014 – Present</h5>
 						<h3>Bachelor of Technology (B.Tech), Information Technology</h3>
 						<a href="https://www.ritindia.edu/">Rajarambapu Istitute Of Technology, Rajaramnagar, Sakhrale</a>
 						<p>CGPA: 5.94/10</p>
 						</div>
 					</div>
-					<div class="card">
-						<div class="container">
+					<div class="card1">
+						<div class="container1">
 						<h5><i class="far fa-calendar-alt"></i>  2012 - 2014</h5>
 						<h3>Higher Secondary Education (12th)</h3>
 						<a href="http://neskolhapur.com/institutions/islampur/islampur-high-school-jr-college.html">Islampur High School & Jr. College of Science</a>
 						<p>Percent: 54.46%</p>
 						</div>
 					</div>
-					<div class="card">
-						<div class="container">
+					<div class="card1">
+						<div class="container1">
 						<h5><i class="far fa-calendar-alt"></i>  2012</h5>
 						<h3>Secondary Education (10th)</h3>
 						<a href="">Tukaram Sawala kadam Vidyamandir, Masuchiwadi</a>
@@ -101,16 +103,18 @@
 				</div>
 				<div class="tab-pane fade show" id="experience" >
 					<h2>Experience</h2>
-					<div class="card">
-						<div class="container">
+					<div class="card1">
+						<div class="container1">
 						<h5><i class="far fa-calendar-alt"></i>  02/2020 - present</h5>
 						<h3>Frontend Developer</h3>
-						<a href="https://ga.greyatom.com/">GreyAtom</a>
-						<p>Description</p>
+						<a href="https://ga.greyatom.com/">GreyAtom - Internship</a>
+						<p>This is Frontend Web Development Career Track in which they have teached us whole front   
+							end development with each sprint project, assignment and Capstone Project. 
+							They gave us the Industrial experience with all the projects and study jam sessions. </p>
 						</div>
 					</div>
-					<div class="card">
-						<div class="container">
+					<div class="card1">
+						<div class="container1">
 						<h5><i class="far fa-calendar-alt"></i>  05/2015 - 02/2020</h5>
 						<h3>Digital Assistant (part-time)</h3>
 						<a href="https://www.ritindia.edu/">Rajarambapu Institute Of Technology, Rajaramnagar, Sakhrale</a>
@@ -128,7 +132,183 @@
 			<h2>Projects</h2>
 		</div>
 		<div class="section4">
-			<h2>skills</h2>
+			<div class="container">
+				<h2 class="title">SKILLS</h2>
+				<div class="skill_container">
+				<div class="wecome_inner">
+					<h2>Programming languages</h2>
+					<div class="tools_expert">
+						<div class="skill_main">
+							<div class="skill_item">
+								<h4>C <span class="counter">60%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>C++ <span class="counter">60%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Java <span class="counter">60%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>JavaScript <span class="counter">70%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Python <span class="counter">70%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>PHP <span class="counter">60%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wecome_inner">
+					<h2>Database Management</h2>
+					<div class="tools_expert">
+						<div class="skill_main">
+							<div class="skill_item">
+								<h4>MySQL <span class="counter">60%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>NoSQL <span class="counter">60%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wecome_inner">
+					<h2>Technology</h2>
+					<div class="tools_expert">
+						<div class="skill_main">
+							<div class="skill_item">
+								<h4>ReactJs <span class="counter">85%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Django <span class="counter">85%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Angular 8 <span class="counter">50%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>IoT Technology <span class="counter">80%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Android Development <span class="counter">50%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Servlet <span class="counter">50%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Laravel <span class="counter">50%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Hadoop <span class="counter">50%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wecome_inner">
+					<h2>Other</h2>
+					<div class="tools_expert">
+						<div class="skill_main">
+							<div class="skill_item">
+								<h4>Algorithm and Data Structure <span class="counter">60%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4>Machine Learning <span class="counter">40%</span></h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
 		</div>
 		<div class="section5">
 			<h2>Contact</h2>
