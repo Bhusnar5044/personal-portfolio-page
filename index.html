@@ -13,18 +13,41 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
-		<div class="nav">
+<body>	
+	<nav class="navbar fixed-top navbar-expand-lg" >
+		<a class="navbar-brand" href="#">IT'S ME</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		  <ul class="navbar-nav">
+			<li class="nav-item active"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+			<li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+			<li class="nav-item"><a class="nav-link" href="">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>			
+		  </ul>
+		  
+		</div>
+	  </nav>
+		<!-- <div class="nav">
 			<div class="content">
 				<a href="" class="home">Home</a>
-				<ul class="nav_items">
-					<li class="item"><a href="">Portfolio</a></li>
-					<li class="item"><a href="">Resume</a></li>
-					<li class="item"><a href="">About</a></li>
-					<li class="item"><a href="">Contact</a></li>
-				</ul>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-collapse offset collapse" id="navbarSupportedContent" style="">
+					<ul class="nav_items">
+						<li class="item"><a href="#portfolio">Portfolio</a></li>
+						<li class="item"><a href="#resume">Resume</a></li>
+						<li class="item"><a href="">About</a></li>
+						<li class="item"><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="section1">
 			<div class="container box">
@@ -63,7 +86,7 @@
 			</div>
 		</div>
 
-		<div class="section2">
+		<div class="section2" id="resume" >
 			<ul id="myTab">
 				<li class="tab-item active">
 					<a data-toggle="tab" href="#education">My Education</a>
@@ -74,12 +97,12 @@
 			</ul>
 			<div class="tab-content content" >
 				<div class="tab-pane fade active show" id="education" >
-					<h2>Education</h2>
+					<h2>My Education</h2>
 					<div class="card1">
 						<div class="container1">
 						<h5><i class="far fa-calendar-alt"></i>  2014 – Present</h5>
 						<h3>Bachelor of Technology (B.Tech), Information Technology</h3>
-						<a href="https://www.ritindia.edu/">Rajarambapu Istitute Of Technology, Rajaramnagar, Sakhrale</a>
+						<a href="https://www.ritindia.edu/"><img src="./images/RitLogo.jpg">Rajarambapu Istitute Of Technology, Rajaramnagar, Sakhrale</a>
 						<p>CGPA: 5.94/10</p>
 						</div>
 					</div>
@@ -101,12 +124,12 @@
 					</div>
 				</div>
 				<div class="tab-pane fade show" id="experience" >
-					<h2>Experience</h2>
+					<h2> My Experience</h2>
 					<div class="card1">
 						<div class="container1">
 						<h5><i class="far fa-calendar-alt"></i>  02/2020 - present</h5>
 						<h3>Frontend Developer</h3>
-						<a href="https://ga.greyatom.com/">GreyAtom - Internship</a>
+						<a href="https://ga.greyatom.com/"><img src="./images/greyatom-og.jpg">GreyAtom - Internship</a>
 						<p>This is Frontend Web Development Career Track in which they have teached us whole front   
 							end development with each sprint project, assignment and Capstone Project. 
 							They gave us the Industrial experience with all the projects and study jam sessions. </p>
@@ -116,7 +139,7 @@
 						<div class="container1">
 						<h5><i class="far fa-calendar-alt"></i>  05/2015 - 02/2020</h5>
 						<h3>Digital Assistant (part-time)</h3>
-						<a href="https://www.ritindia.edu/">Rajarambapu Institute Of Technology, Rajaramnagar, Sakhrale</a>
+						<a href="https://www.ritindia.edu/"><img src="./images/RitLogo.jpg"> Institute Of Technology, Rajaramnagar, Sakhrale</a>
 						<p>This is the part-time job of Working of 3 hrs, 
 							the work is like Managing Central digital library of College, 
 							Server handling of central Library, taking care of Computer Issues, 
@@ -128,7 +151,143 @@
 			</div>
 		</div>
 		<div class="section3">
-			<h2>Projects</h2>
+			<div class="container">
+				<h2 id="portfolio" class="title">Projects</h2>
+				<div class="feature_inner row">
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Food4Foodie App</h4>
+								<p>This is a Food for Foodie App. This App is similar to Swiggy and Zomato. 
+									Here people can find the nearest restaurants, explore new cuisines, 
+									Restaurants and can order food.
+								</p>
+								<p><b>Technology Used-</b> React, Redux, Sagas, Axios, Zomato API,  Firebase, other react libraries.</p>
+								<a class="light" href="https://hosted-18e84.web.app/"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Pro-Organizer App With Redux</h4>
+								<p>This is a Team Collaboration application. This is like the most  
+									popular Trello Application which is the task organizer/team collaboration tool. 
+									The Application build using Redux
+								</p>
+								<p><b>Technology Used-</b> React, Redux, Thunk, Axios,  Firebase, HTML5's drag and drop functionality, other react libraries.</p>
+								<a class="light" href="https://bhusnar5044.github.io/pro-organiser-app-redux/"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Pro-Organizer App</h4>
+								<p>This is Team Collaboration application. This is like the most popular
+									 Trello Application which is the task organizer/team collaboration tool.
+								</p>
+								<p><b>Technology Used-</b> React, Axios, Firebase, HTML5's drag and drop functionality, other react libraries.</p>
+								<a class="light" href="https://bhusnar5044.github.io/pro-organiser-application/"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Financial Portfolio Tracker App</h4>
+								<p>This is a portfolio of a collection of financial investments like stocks, bonds, commodities. 
+									Here people can manage their stocks, they can buy, remove etc.
+								</p>
+								<p><b>Technology Used-</b> React, Axios, Alphavantage API, Firebase, other react libraries.</p>
+								<a class="light" href="https://bhusnar5044.github.io/financial-portfolio-tracker-app/"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>News Aggregator App</h4>
+								<p>This is a News Aggregator App which is a webpack based frontend project. 
+									In this App people can read the latest news, and they can filter it by country, category, date etc.
+								</p>
+								<p><b>Technology Used-</b> Webpack, babel, Advanced Js, Fetch, NewsAPI</p>
+								<a class="light" href="https://bhusnar5044.github.io/news-aggregator-app/"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Zomato Replica Project</h4>
+								<p>This is Replica of Zomato Which contains only responsive UI of Zomato.
+								</p>
+								<p><b>Technology Used-</b> html5, css, bootstrap</p>
+								<a class="light" href="https://bhusnar5044.github.io/zomato-replica/"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Blogging App</h4>
+								<p>This is a blogging website where users can create, edit or delete blogs here, 
+									people can see created blogs give likes and can give comments on it, also they can share it.
+								</p>
+								<p><b>Technology Used-</b> Html5, CSS3, Bootstratp4, Angular 8, NodeJS, TypeScript, MongoDB, jwt bearer token, Heroku CLI.</p>
+								<a class="light" href="https://blogger-com.herokuapp.com/#/auth/login"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Plan Your Next Trip</h4>
+								<p>This is a platform for the people who keep their vehicle on rent for the trip or 
+									long journeys and for people who will going to plan a long trip but they don't have a 
+									connection with drivers or vehicle owners. This platform is going to bridge the gap 
+									between them. people can visit our site and can plan their trip. 
+								</p>
+								<p><b>Technology Used-</b> Html5, CSS3, Bootstratp4, PHP, MySQL, Javascript. Jquery, JSP, 
+									Sublime Text, 000webhost.com for hosting
+								</p>
+								<a class="light" href="https://planyournexttrips.000webhostapp.com/"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Smart Parking System Using IoT</h4>
+								<p>The system is an IOT based cloud-integrated smart parking system. 
+									The system consists of an on-site deployment of an IoT module 
+									that is used to monitor and signalize the state of availability of parking space. 
+								</p>
+								<p><b>Technology Used-</b>Raspberry pi, Ultrasonic Sensors, python, Node-Red, IBM Cloud
+								</p>
+								<a class="light" href=""><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Healthy Oil Android App</h4>
+								<p>This app was an online store for different kinds of oil. 
+									Here we were going to inform people about healthy oil by giving the details of each product, 
+									So people can order healthy oils through our app and will live healthily. 
+								</p>
+								<p><b>Technology Used-</b>Github, Scrum Master, Java, Android Studio, XML, Firebase Database.
+								</p>
+								<a class="light" href="https://github.com/Bhusnar5044/HealdyOil"><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!-- <i class="flaticon-city"></i> -->
+								<h4>Safety Band Using IoT</h4>
+								<p>Safety Band for the people in insecure situations. 
+									This is IOT based band to help the people in uncertain situations, 
+									by sending their situations to the relatives or nearby hospital
+								</p>
+								<p><b>Technology Used-</b>Github, Scrum Master, Arduino, Gps Tracking, Google Cloud Platform.
+								</p>
+								<a class="light" href=""><img src="images/icon.png" alt=""><span>QUICK VIEW</span></a>
+        				</div>
+        			</div>
+        		</div>
+			</div>
 		</div>
 		<div class="section4">
 			<div class="container">
@@ -309,7 +468,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section5">
+		<div class="section5" id="contact">
 			<h2>Contact</h2>
 			<form class="row">
 				<div class="col">

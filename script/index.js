@@ -1,6 +1,6 @@
 (function ($) {
 
-var nav_offset_top = $('.nav').height() + 50; 
+var nav_offset_top = $('.navbar').height() + 50; 
     /*-------------------------------------------------------------------------------
 	  Navbar 
 	-------------------------------------------------------------------------------*/
@@ -10,9 +10,9 @@ var nav_offset_top = $('.nav').height() + 50;
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();   
         if (scroll >= nav_offset_top ) {
-            $(".nav").addClass("nav_fixed");
+            $(".navbar").addClass("navbar-dark bg-dark");
         } else {
-            $(".nav").removeClass("nav_fixed");
+            $(".navbar").removeClass("navbar-dark bg-dark");
         }
     });
      
